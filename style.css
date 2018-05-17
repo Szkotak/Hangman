@@ -6,7 +6,7 @@ body {
    
    
    .container {
-   
+   /* background opacity at 0 :D */
     background-color: rgba(224, 112, 104, 0);
     color: rgb(203, 237, 250)
     

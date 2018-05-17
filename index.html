@@ -4,6 +4,9 @@
     <head>
         <title>Hangman</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
         
             <h1> </h1>
         <br>
@@ -12,21 +15,28 @@
 
             <br>
             <br>
+            <br>
+            <br>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     </head>
 
     <body>
+        <!-- working code, still learning - javascript logic is difficult :)-->
         <div class="container">
             <br>
             <br>
 
-            <strong>The Word to Guess</strong></h3>
-
+            <div class="animated jello"><strong><font size="25" face="Poiret One">The Word to Guess</font></strong></h3></div>
+     
+     
+        <font size="5.9" face="Poiret One">
             <h3 id="word-blanks">_ _ _ _ _ _ _ _ _ </h3>
             <br>
             <br>
 
-            <strong>Your Wrong Guesses: </strong> <span id="wrong-guesses"></span>
+
+
+            <strong>Attempts:</strong> <span id="wrong-guesses"></span>
             <br>
             <br>
 
@@ -40,6 +50,7 @@
             <br>
 
             <strong>Losses: </strong> <span id="loss-counter">0</span>
+        </font>
     <script>
 
 
@@ -61,7 +72,7 @@ var blanksAndSuccesses = [];
 var wrongGuesses = [];
 var winCounter = 0;
 var lossCounter = 0;
-var numGuesses = 9;
+var numGuesses = 5;
 
 
 function startGame() {
